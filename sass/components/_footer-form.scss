@@ -1,0 +1,68 @@
+.foter__form{
+    margin: 0px;
+
+    & .foter__field-email{
+        position: absolute;
+        left: 0px;
+        top: 52px;
+        padding: 15px 0px 15px 16px;
+    
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+    
+        letter-spacing: 0.03em;
+    
+        color: $foterContactColor;
+    
+        width: 358px;
+    
+        background-color: $mainBgColor;
+    
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    }
+
+    & .foter__btn{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        margin-top: 29px;
+        margin-left: 370px;
+        padding: 10px 13px 10px 42px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+    
+        letter-spacing: 0.06em;
+    
+        color: $fourthColor;
+        background-color: $mainColor;
+    
+        border: 0px;
+        border-radius: 4px;
+    
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+        cursor: pointer;
+        opacity: 0.5;
+    
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+.foter__form-icon {
+    width: 24px;
+    height: 24px;
+
+    margin-left: 24px;
+
+    fill: $fourthColor;
+}

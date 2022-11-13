@@ -1,0 +1,49 @@
+/* ************** SECTION NO.2 - OUR JOB ***************** */
+
+.our-job__list{           
+    display: flex;
+    align-items:center;
+    gap: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+
+    color: $secondaryColor;
+
+    &--distance{
+        padding-top: 50px;
+    }
+
+    & .our-job__item{
+        position: relative;
+    }
+}
+
+.our-job__text-box{
+    margin: 0px;
+
+    width: 370px;
+    padding: 27px 0px;
+
+    position: absolute;
+    top: 224px;
+
+    background-color: var(--text-color);
+
+    & .our-job__name{
+        margin: 0px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        text-align: center;
+    
+        letter-spacing: 0.03em;
+    
+        color: $fourthColor;
+    }
+}
+
+/* ************ END SECTION NO.2 - OUR JOB *************** */

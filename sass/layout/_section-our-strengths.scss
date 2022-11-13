@@ -1,0 +1,40 @@
+/* *************SECTION NO.1 - OUR STRENGTHS ************ */
+
+.our-strengths__list{           
+    display: flex;
+    align-items:center;
+    gap: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+
+    color: $secondaryColor;
+
+    &--distance{
+        padding-top: 94px;
+    }
+
+    & .our-strengths__item{
+
+        & .our-strengths__icon{   /* svg */
+            margin-bottom: 30px;
+        
+            background-color: var(--bg-color);
+            border-radius: 4px;
+        }
+        
+        & .our-strengths__paragraph{ /* paragraph */
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.714;
+        
+            letter-spacing: 0.03em;
+        
+            color: $thirdColor;
+        }
+    }
+}
+
+/* ********* END SECTION NO.1 - OUR STRENGTHS ************ */

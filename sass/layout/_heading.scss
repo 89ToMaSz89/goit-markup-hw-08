@@ -1,0 +1,36 @@
+.heading{
+    margin: 0px;
+
+    box-sizing: border-box; 
+
+    padding: 200px 0px;
+
+    background-image: linear-gradient(
+
+                    0deg,
+                    rgba(47,48,58,0.4)0%,
+                    rgba(47,48,58,0.4)100%),
+                    url('../images/imgNew.jpg');
+    background-repeat: no-repeat;
+    background-size: 1600px auto;
+    background-position: center;
+}
+
+.heading-overlay{
+    background-color: $mainBgColor;
+}
+
+.heading__title{
+    margin: 0px;
+    padding-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+
+    text-align: center;
+    letter-spacing: 0.06em; 
+
+    color: $fourthColor;
+}
+

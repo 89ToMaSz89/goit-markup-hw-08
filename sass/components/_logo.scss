@@ -1,0 +1,38 @@
+.main-head__logo{           /* ### Logo - header ### */
+    margin: 0px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+
+    color: $secondaryColor;
+    text-decoration: none;
+
+    &--color{
+        color: $mainColor;
+    }
+}
+
+.foter__logo{           /* ### Logo - footer ### */
+    margin: 0px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+
+    color: $fourthColor;
+    text-decoration: none;
+
+    &--color{
+        color: $mainColor;
+    }
+}
+

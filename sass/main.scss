@@ -1,0 +1,66 @@
+                /* ### Utils ### */
+
+@import "./utils/variables";
+@import "./utils/is-hidden";
+
+                /* ### Base ### */
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+                /* ### Header ### */
+
+@import "./components/logo";
+@import "./layout/header";
+@import "./components/header-navigation";
+@import "./components/header-contact";
+
+                /* ### Heading ### */
+
+@import "./layout/heading";
+@import "./components/heading-btn";
+
+                /* ### Our-strengths ### */
+
+@import "./layout/section-our-strengths";
+
+                /* ### Our-job ### */
+
+@import "./layout/section-our-job";
+
+                /* ### Our-team ### */
+
+@import "./layout/section-our-team";
+@import "./components/our-team-icon";
+
+                /* ### Our-clients ### */
+
+@import "./layout/section-our-clients";
+@import "./components/our-clients-icon";
+
+                /* ### Menu ### */
+
+@import "./components/menu";
+
+                /* ### Projects ### */
+
+@import "./layout/projects";
+@import "./components/project-card";
+
+                /* ### Footer ### */
+
+@import "./layout/footer";
+@import "./components/footer-contact";
+@import "./components/footer-icon";
+@import "./components/footer-form";
+
+                /* ### Backdrop ### */
+
+@import "./components/backdrop";
+
+                /* ### Window modal ### */
+
+@import "./components/window-modal";
+
+

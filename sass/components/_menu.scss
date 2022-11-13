@@ -1,0 +1,43 @@
+.menu__list{              /* ### menu ### */
+    margin: 0px;
+
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding-left: 295px;
+}
+
+.menu__btn{
+    margin: 0px;
+
+    padding: 6px 22px;
+
+    border-radius: 4px;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $secondaryColor;
+
+    transition-property: background-color, color, box-shadow;   /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    background-color: $mainColor;
+    color: $fourthColor;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+    cursor: pointer;
+    }
+}

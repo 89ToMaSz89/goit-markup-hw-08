@@ -1,0 +1,124 @@
+.foter-overlay{
+    background-color: $mainBgColor;
+}
+
+.foter{
+    box-sizing: border-box;
+    
+    padding: 60px 0px;
+}
+
+.foter__list{
+    display: flex;
+    align-content: center;
+
+    margin-right: 70px;
+    padding-top: 20px;
+}
+
+.foter__list--collocation{
+    flex-direction: column;
+    gap: 9px;
+}
+
+.foter__list--collocation-social{
+    gap: 10px;
+    margin: 0px;
+}
+
+.foter__item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: $fourthColor;
+
+    margin-top: 9px;
+}
+
+.foter__head{           /* ### social media ### */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143px;
+    letter-spacing: 0.03em;
+
+    color: $fourthColor;
+    
+}
+
+.foter__link{           /* contact links */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: $foterContactColor;
+
+    &:hover,
+    &:focus{
+    color: $mainColor;
+
+        & .foter__icon{
+        background-color: $mainColor;
+    }
+}
+}
+
+.foter__icon{                       /* svg */
+    fill: $fourthColor;
+
+    border-radius: 50%;
+    background-color: $foterBgIconColor;
+
+    transition-property: background-color;  /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foter__item--collocation{      /* ### form - newsletter ### */
+    position: relative;
+    padding-right: 350px;
+    margin-top: 0px;
+    left: 78px;
+}
+
+.foter__form{
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.foter__field-email{
+    position: absolute;
+    left: 0px;
+    top: 62px;
+    padding: 15px 0px 15px 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.foter__icon-form{
+        width: 24px;
+        height: 24px;
+    
+        letter-spacing: 0.03em;
+        margin-left: 24px;
+    
+        color: $foterContactColor;
+        fill: $fourthColor;
+    }
+    
+    //     width: 358px;
+    
+    //     background-color: $mainBgColor;
+    
+    //     border: 1px solid rgba(255, 255, 255, 0.3);
+    //     border-radius: 4px;
+    // }

@@ -1,0 +1,29 @@
+.our-clients__icon{     /* svg */
+    margin: 0px;
+
+    width: 170px;
+    height: 92px;
+
+    fill: $iconColor;
+
+    box-sizing: border-box;
+    border: 1px solid $iconColor;
+    border-radius: 4px;
+
+    transition-property: border-color, fill;    /* transition */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-clients__link{
+    &:hover,
+    &:focus{
+     fill:  $mainColor;
+     border-color: $mainColor;
+ 
+         & .our-clients__icon{
+             fill:  $mainColor;
+             border-color: $mainColor;
+         }
+    }
+ }
