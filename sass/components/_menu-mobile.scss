@@ -1,0 +1,24 @@
+/* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
+
+.menu-mobile{
+        &__icon{
+            width: 40px;
+            height: 40px;
+
+            margin-left: 276px;
+        }
+
+        &:hover{
+            &__icon{
+                fill: $mainColor;
+            }
+        }
+}
+
+/* --------------------- FOR DESKTOP --------------------- */
+
+@media screen and (min-width: 1200px){
+    .menu-mobile{
+        display: none;
+    }
+}
