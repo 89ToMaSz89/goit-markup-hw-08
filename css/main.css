@@ -240,15 +240,16 @@ h2 {
   }
 }
 /* ### Heading ### */
+/* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 .heading {
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 200px 0px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imgNew.jpg");
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/imgNew.jpg");
+  padding: 118px 0px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/HeaderImgMobile.jpg");
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/HeaderImgMobile.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px auto;
+  background-size: 480px auto;
   background-position: center;
 }
 
@@ -260,13 +261,40 @@ h2 {
   margin: 0px;
   padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
 }
 
+/* --------------------- FOR DESKTOP --------------------- */
+@media screen and (min-width: 1200px) {
+  .heading {
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 200px 0px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imgNew.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/imgNew.jpg");
+    background-repeat: no-repeat;
+    background-size: 1600px auto;
+    background-position: center;
+  }
+  .heading-overlay {
+    background-color: #2f303a;
+  }
+  .heading__title {
+    margin: 0px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+}
 .heading__btn {
   margin: 0px;
   -webkit-box-sizing: border-box;
