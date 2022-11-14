@@ -2,17 +2,30 @@
 
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 
+
 .container{
-  max-width: 450px;
+  max-width: 480px;
   
   margin: 0 auto;
 }
 
+/* --------------------- FOR TABLET --------------------- */
+
+@media screen and (max-width: 768px){
+  .container{
+    max-width: 738px;
+
+    margin: 0 auto;
+  }
+}
+
 /* --------------------- FOR DESKTOP --------------------- */
 
-.container{
-  max-width: 1200px;
+@media screen and (min-width: 1200px){
+  .container{
+    max-width: 1200px;
             
-  margin: 0 auto; 
+    margin: 0 auto; 
+  }
 }
 
