@@ -50,7 +50,7 @@ h2 {
 /* auxiliary class  */
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 .container {
-  max-width: 480px;
+  max-width: 480;
   margin: 0 auto;
 }
 
@@ -293,7 +293,7 @@ h2 {
 }
 
 /* --------------------- FOR TABLET --------------------- */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .heading {
     margin: 0px;
     -webkit-box-sizing: border-box;
