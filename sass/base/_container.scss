@@ -3,14 +3,14 @@
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 
   .container{
-    max-width: 480;
-
+    max-width: 450;
+    
     margin: 0 auto;
   }
 
 /* --------------------- FOR TABLET --------------------- */
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
   .container{
     max-width: 738px;
 

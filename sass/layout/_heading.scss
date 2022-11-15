@@ -38,7 +38,7 @@
 
 /* --------------------- FOR TABLET --------------------- */
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 780px){
     .heading{
         margin: 0px;
 
@@ -53,7 +53,7 @@
                         rgba(47,48,58,0.4)100%),
                         url('/images/HeaderImgTablet.jpg');
         background-repeat: no-repeat;
-        background-size: 768px auto;
+        background-size: 780px auto;
         background-position: center;
     }
 

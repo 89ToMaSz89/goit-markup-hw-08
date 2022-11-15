@@ -50,12 +50,12 @@ h2 {
 /* auxiliary class  */
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 .container {
-  max-width: 480;
+  max-width: 450;
   margin: 0 auto;
 }
 
 /* --------------------- FOR TABLET --------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
     margin: 0 auto;
@@ -293,7 +293,7 @@ h2 {
 }
 
 /* --------------------- FOR TABLET --------------------- */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 780px) {
   .heading {
     margin: 0px;
     -webkit-box-sizing: border-box;
@@ -302,7 +302,7 @@ h2 {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/HeaderImgTablet.jpg");
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/HeaderImgTablet.jpg");
     background-repeat: no-repeat;
-    background-size: 768px auto;
+    background-size: 780px auto;
     background-position: center;
   }
   .heading-overlay {
