@@ -446,37 +446,16 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    color: #212121;
   }
   .our-strengths__list--distance {
     padding-top: 94px;
   }
   .our-strengths__list .our-strengths__item .our-strengths__icon { /* svg */
     width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--bg-color);
-    border-radius: 4px;
   }
   .our-strengths__list .our-strengths__item .our-strengths__icon .icon-position {
     -webkit-transform: translate(102.34px, 25px);
             transform: translate(102.34px, 25px);
-  }
-  .our-strengths__list .our-strengths__item .our-strengths__header {
-    font-size: 14px;
-    line-height: 1.143;
-    text-align: left;
-  }
-  .our-strengths__list .our-strengths__item .our-strengths__paragraph { /* paragraph */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: #757575;
   }
 }
 /* ********* END SECTION NO.1 - OUR STRENGTHS ************ */
