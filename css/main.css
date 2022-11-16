@@ -461,45 +461,62 @@ h2 {
 /* ********* END SECTION NO.1 - OUR STRENGTHS ************ */
 /* ### Our-job ### */
 /* ************** SECTION NO.2 - OUR JOB ***************** */
-.our-job__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-.our-job__list--distance {
-  padding-top: 50px;
-}
-.our-job__list .our-job__item {
-  position: relative;
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
+.our-job {
+  display: none;
 }
 
-.our-job__text-box {
-  margin: 0px;
-  width: 370px;
-  padding: 27px 0px;
-  position: absolute;
-  top: 224px;
-  background-color: var(--text-color);
+/* --------------------- FOR TABLET -----------------------*/
+@media screen and (min-width: 768px) {
+  .our-job {
+    display: none;
+  }
 }
-.our-job__text-box .our-job__name {
-  margin: 0px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+/* --------------------- FOR DESKTOP -----------------------*/
+@media screen and (min-width: 1200px) {
+  .our-job {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .our-job__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .our-job__list--distance {
+    padding-top: 50px;
+  }
+  .our-job__list .our-job__item {
+    position: relative;
+  }
+  .our-job__text-box {
+    margin: 0px;
+    width: 370px;
+    padding: 27px 0px;
+    position: absolute;
+    top: 224px;
+    background-color: var(--text-color);
+  }
+  .our-job__text-box .our-job__name {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
-
 /* ************ END SECTION NO.2 - OUR JOB *************** */
 /* ### Our-team ### */
 /* ************** SECTION NO.3 - OUR TEAM **************** */
