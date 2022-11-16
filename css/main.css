@@ -50,7 +50,7 @@ h2 {
 /* auxiliary class  */
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 .container {
-  max-width: 450;
+  max-width: 450px;
   margin: 0 auto;
 }
 
@@ -413,42 +413,24 @@ h2 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    color: #212121;
+    gap: 30px;
   }
-  .our-strengths__list--distance {
-    padding-top: 60px;
+  .our-strengths__list .our-strengths__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
   .our-strengths__list .our-strengths__item .our-strengths__icon { /* svg */
     width: 354px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--bg-color);
-    border-radius: 4px;
   }
   .our-strengths__list .our-strengths__item .our-strengths__icon .icon-position {
     -webkit-transform: translate(144.34px, 25px);
             transform: translate(144.34px, 25px);
   }
   .our-strengths__list .our-strengths__item .our-strengths__header {
-    font-size: 14px;
-    line-height: 1.143;
     text-align: left;
-  }
-  .our-strengths__list .our-strengths__item .our-strengths__paragraph { /* paragraph */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: #757575;
   }
 }
 /* --------------------- FOR DESKTOP -----------------------*/

@@ -54,53 +54,26 @@
     
         display: flex;
         flex-wrap: wrap;
-        flex-basis: calc((100% - 30px) / 2);
         align-items: center;
-        
-        //gap: 30px;
-
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.143;
-        letter-spacing: 0.03em;
-
-        color: $secondaryColor;
-
-        &--distance{
-            padding-top: 60px;
-        }
+        gap: 30px;
 
         & .our-strengths__item{
+
+            flex-basis: calc((100% - 30px) / 2);
 
             & .our-strengths__icon{   /* svg */
 
                 width: 354px;
-                height: 120px;
-
-                margin-bottom: 30px;
-    
-                background-color: var(--bg-color);
-                border-radius: 4px;
 
                 & .icon-position{
+
                     transform: translate(144.34px, 25px);
                 }
             }
 
             & .our-strengths__header{
-                font-size: 14px;
-                line-height: 1.143;
+
                 text-align: left;
-            }
-    
-            & .our-strengths__paragraph{ /* paragraph */
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 1.714;
-    
-                letter-spacing: 0.03em;
-    
-                color: $thirdColor;
             }
         }
     }
