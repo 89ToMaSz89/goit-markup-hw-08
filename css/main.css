@@ -520,18 +520,16 @@ h2 {
 /* ************ END SECTION NO.2 - OUR JOB *************** */
 /* ### Our-team ### */
 /* ************** SECTION NO.3 - OUR TEAM **************** */
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 .ssection-overlay {
   background-color: var(--bg-color);
 }
 
 .our-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -539,11 +537,14 @@ h2 {
   color: #212121;
 }
 .our-team__list--distance {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .our-team__list--position { /* svg */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 10px;
-  margin: 0px 32px 30px 32px;
+  margin: 0px 122px 24px 122px;
 }
 .our-team__list .our-team__item {
   margin: 0px;
@@ -579,6 +580,59 @@ h2 {
   color: #757575;
 }
 
+/* --------------------- FOR TABLET -----------------------*/
+/* --------------------- FOR DESKTOP -----------------------*/
+@media screen and (min-width: 1200px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .our-team__list--distance {
+    padding-top: 50px;
+  }
+  .our-team__list--position { /* svg */
+    gap: 10px;
+    margin: 0px 32px 30px 32px;
+  }
+  .our-team__list .our-team__item {
+    margin: 0px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+  }
+  .our-team__list .our-team__item--border {
+    border: none;
+    border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .our-team__list .our-team__item .our-team__name {
+    margin: 0px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .our-team__list .our-team__item .our-team__workplace {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
 /* ************ END SECTION NO.3 - OUR TEAM *************** */
 .our-team__icon {
   fill: #AFB1B8;
