@@ -233,10 +233,11 @@
 
             <li class="our-team__item">
               <img
-                src="images/imgD.jpg"
+                src="/images/imgD.jpg"
                 alt="John Doe. Product Designer"
-                width="270"
-                height="260"
+                srcset="/images/imgDmobile-450.jpg 450w, /images/imgDtablet.jpg 354w , /images/imgD.jpg 1200w"
+                sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+               
               />
               <p class="our-team__name">John Doe</p>
               <p class="our-team__workplace">Product Designer</p>
@@ -674,7 +675,7 @@
             </ul>
           </li>
 
-          <!--FORM-->
+          FORM-->
 
     <!-- <li class="foter__item foter__item--collocation">
             <form class="foter__form">
