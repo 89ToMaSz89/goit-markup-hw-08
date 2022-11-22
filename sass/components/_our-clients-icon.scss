@@ -1,7 +1,10 @@
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
+
 .our-clients__icon{     /* svg */
+    
     margin: 0px;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     fill: $iconColor;
@@ -13,17 +16,49 @@
     transition-property: border-color, fill;    /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & .our-clients__position{
+        transform: translate(52px, 16px);
+    }
 }
 
 .our-clients__link{
     &:hover,
     &:focus{
-     fill:  $mainColor;
-     border-color: $mainColor;
- 
+    fill:  $mainColor;
+    border-color: $mainColor;
+
          & .our-clients__icon{
-             fill:  $mainColor;
-             border-color: $mainColor;
+            fill:  $mainColor;
+            border-color: $mainColor;
          }
     }
- }
+}
+
+/* --------------------- FOR TABLET -----------------------*/
+
+@media screen and (min-width: 768px){
+
+    .our-clients__icon{
+
+        width: 226px;
+
+        & .our-clients__position{
+            transform: translate(60px, 16px);
+        }
+    }
+}
+
+/* --------------------- FOR DESKTOP -----------------------*/
+
+@media screen and (min-width: 1200px){
+
+    .our-clients__icon{     /* svg */
+        
+        width: 170px;
+
+        & .our-clients__position{
+            transform: translate(32px, 15.98px);
+        }
+    }
+}

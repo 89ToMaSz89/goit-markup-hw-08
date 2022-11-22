@@ -586,6 +586,9 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -618,39 +621,6 @@ h2 {
     gap: 10px;
     margin: 0px 32px 30px 32px;
   }
-  .our-team__list .our-team__item {
-    margin: 0px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: #ffffff;
-  }
-  .our-team__list .our-team__item--border {
-    border: none;
-    border-radius: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .our-team__list .our-team__item .our-team__name {
-    margin: 0px;
-    margin-top: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.188;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-  .our-team__list .our-team__item .our-team__workplace {
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.188;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
 }
 /* ************ END SECTION NO.3 - OUR TEAM *************** */
 .our-team__icon {
@@ -676,6 +646,7 @@ h2 {
 
 /* ### Our-clients ### */
 /* ************* SECTION NO.4 - OUR CLIENTS *************** */
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 .our-clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,6 +654,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
   gap: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -691,13 +666,27 @@ h2 {
   color: #212121;
 }
 .our-clients__list--distance {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
+/* --------------------- FOR TABLET -----------------------*/
+@media screen and (min-width: 768px) {
+  .our-clients__list {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+/* --------------------- FOR DESKTOP -----------------------*/
+@media screen and (min-width: 1200px) {
+  .our-clients__list--distance {
+    padding-top: 50px;
+  }
+}
 /* ********* END SECTION NO.4 - OUR CLIENTS *************** */
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 .our-clients__icon { /* svg */
   margin: 0px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   fill: #AFB1B8;
   -webkit-box-sizing: border-box;
@@ -711,6 +700,10 @@ h2 {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.our-clients__icon .our-clients__position {
+  -webkit-transform: translate(52px, 16px);
+          transform: translate(52px, 16px);
+}
 
 .our-clients__link:hover, .our-clients__link:focus {
   fill: #2196f3;
@@ -721,6 +714,26 @@ h2 {
   border-color: #2196f3;
 }
 
+/* --------------------- FOR TABLET -----------------------*/
+@media screen and (min-width: 768px) {
+  .our-clients__icon {
+    width: 226px;
+  }
+  .our-clients__icon .our-clients__position {
+    -webkit-transform: translate(60px, 16px);
+            transform: translate(60px, 16px);
+  }
+}
+/* --------------------- FOR DESKTOP -----------------------*/
+@media screen and (min-width: 1200px) {
+  .our-clients__icon { /* svg */
+    width: 170px;
+  }
+  .our-clients__icon .our-clients__position {
+    -webkit-transform: translate(32px, 15.98px);
+            transform: translate(32px, 15.98px);
+  }
+}
 /* ### Menu ### */
 .menu__list { /* ### menu ### */
   margin: 0px;

@@ -1,8 +1,13 @@
 /* ************* SECTION NO.4 - OUR CLIENTS *************** */
 
-.our-clients__list{           
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
+
+.our-clients__list{
+    
     display: flex;
-    align-items:center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
     gap: 30px;
 
     font-weight: 700;
@@ -13,7 +18,29 @@
     color: $secondaryColor;
 
     &--distance{
+        padding-top: 30px;
+    }
+}
+
+/* --------------------- FOR TABLET -----------------------*/
+
+@media screen and(min-width: 768px){
+
+    .our-clients__list{
+
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+/* --------------------- FOR DESKTOP -----------------------*/
+
+@media screen and (min-width: 1200px){
+
+    .our-clients__list{           
+
+        &--distance{
         padding-top: 50px;
+        }
     }
 }
 
