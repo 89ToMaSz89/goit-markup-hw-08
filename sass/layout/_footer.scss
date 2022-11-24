@@ -1,3 +1,5 @@
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
+
 .foter{
     box-sizing: border-box;
 
@@ -9,27 +11,6 @@
 }
 
 .foter__list{
-    display: flex;
-    align-content: center;
-
-    margin-right: 70px;
-    padding-top: 20px;
-}
-    
-.foter__list--collocation{
-    flex-direction: column;
-    gap: 9px;
-}
-
- .foter__list--collocation-social{
-    gap: 10px;
-    margin: 0px;
-}
-
-.foter__item{
-    position: relative;
-    top: 0px;
-    margin: 0px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -40,22 +21,86 @@
 
     color: $fourthColor;
 
-    margin-top: 9px;
+    text-align: center;
 }
 
-.foter__head {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143px;
-    letter-spacing: 0.03em;
+.foter__list--collocation{
+    padding-top: 20px;
 
-    color: $fourthColor;
+    & .foter__item--collocation{
+        margin-bottom: 8px;
+    }
 }
 
-.foter__item--collocation{
-    position: relative;
-    left: 78px;
-    top: 0px;
+
+
+
+/* --------------------- FOR TABLET -----------------------*/
+
+/* --------------------- FOR DESKTOP -----------------------*/
+
+@media screen and (min-width: 1200px){
+
+    .foter{
+        box-sizing: border-box;
+
+        padding: 60px 0px;
+    }
+
+    .foter-overlay{
+        background-color: $mainBgColor;
+    }
+
+    .foter__list{
+        display: flex;
+        align-content: center;
+
+        margin-right: 70px;
+        padding-top: 20px;
+    }
+    
+    .foter__list--collocation{
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .foter__list--collocation-social{
+        gap: 10px;
+        margin: 0px;
+    }
+
+    // .foter__item{
+    //     position: relative;
+    //     top: 0px;
+    //     margin: 0px;
+    //     font-family: 'Roboto';
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     font-size: 14px;
+    //     line-height: 1.714;
+
+    //     letter-spacing: 0.03em;
+
+    //     color: $fourthColor;
+
+    //     margin-top: 9px;
+    // }
+
+    .foter__head {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143px;
+        letter-spacing: 0.03em;
+
+        color: $fourthColor;
+    }
+
+    .foter__item--collocation{
+        position: relative;
+        left: 78px;
+        top: 0px;
+    }
+
 }
 
 
