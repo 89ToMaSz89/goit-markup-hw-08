@@ -22,6 +22,20 @@
     color: $fourthColor;
 
     text-align: center;
+
+    & .foter__item{
+
+        & .foter__head{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.143px;
+            letter-spacing: 0.03em;
+
+            color: $fourthColor;
+
+            padding-top: 60px;
+            }
+        }
 }
 
 .foter__list--collocation{
@@ -36,6 +50,32 @@
 
 
 /* --------------------- FOR TABLET -----------------------*/
+
+@media screen and (min-width: 768px){
+
+    .foter{
+        box-sizing: border-box;
+    
+        padding: 60px 0px;
+    }
+
+    .foter__list{
+        display: flex;
+        flex-wrap: wrap;
+
+        & .foter__item{
+            flex-basis: calc((100%) / 2);
+
+            & .foter__head{
+                padding: 0px;
+            }
+        }
+    }
+
+    .foter__list--collocation{
+        display: block;
+    }
+}
 
 /* --------------------- FOR DESKTOP -----------------------*/
 
@@ -86,14 +126,14 @@
     //     margin-top: 9px;
     // }
 
-    .foter__head {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.143px;
-        letter-spacing: 0.03em;
+    // .foter__head {
+    //     font-weight: 700;
+    //     font-size: 14px;
+    //     line-height: 1.143px;
+    //     letter-spacing: 0.03em;
 
-        color: $fourthColor;
-    }
+    //     color: $fourthColor;
+    // }
 
     .foter__item--collocation{
         position: relative;

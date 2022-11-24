@@ -891,6 +891,14 @@ h2 {
   color: #ffffff;
   text-align: center;
 }
+.foter__list .foter__item .foter__head {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-top: 60px;
+}
 
 .foter__list--collocation {
   padding-top: 20px;
@@ -900,6 +908,30 @@ h2 {
 }
 
 /* --------------------- FOR TABLET -----------------------*/
+@media screen and (min-width: 768px) {
+  .foter {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 60px 0px;
+  }
+  .foter__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .foter__list .foter__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .foter__list .foter__item .foter__head {
+    padding: 0px;
+  }
+  .foter__list--collocation {
+    display: block;
+  }
+}
 /* --------------------- FOR DESKTOP -----------------------*/
 @media screen and (min-width: 1200px) {
   .foter {
@@ -929,13 +961,6 @@ h2 {
   .foter__list--collocation-social {
     gap: 10px;
     margin: 0px;
-  }
-  .foter__head {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143px;
-    letter-spacing: 0.03em;
-    color: #ffffff;
   }
   .foter__item--collocation {
     position: relative;
