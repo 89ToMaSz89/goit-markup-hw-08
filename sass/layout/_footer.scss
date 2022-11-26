@@ -34,11 +34,22 @@
             color: $fourthColor;
 
             padding-top: 60px;
+        }
+
+        & .foter__list--collocation-social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            & .foter__item--collocation-social{
+                padding-top: 20px;
             }
         }
+    }
 }
 
-.foter__list--collocation{
+.foter__list--collocation{      // address
     padding-top: 20px;
 
     & .foter__item--collocation{
@@ -46,18 +57,9 @@
     }
 }
 
-
-
-
 /* --------------------- FOR TABLET -----------------------*/
 
 @media screen and (min-width: 768px){
-
-    .foter{
-        box-sizing: border-box;
-    
-        padding: 60px 0px;
-    }
 
     .foter__list{
         display: flex;
@@ -70,10 +72,19 @@
                 padding: 0px;
             }
         }
+
+        & .foter__list--collocation-social{
+            flex-wrap: nowrap;
+            gap: 10px;
+
+            & .foter__item--collocation-social{
+                flex-basis: content;
+            }
+        }
     }
 
-    .foter__list--collocation{
-        display: block;
+    .foter__list--collocation{ 
+        flex-direction: column;
     }
 }
 
@@ -81,66 +92,25 @@
 
 @media screen and (min-width: 1200px){
 
-    .foter{
-        box-sizing: border-box;
-
-        padding: 60px 0px;
-    }
-
-    .foter-overlay{
-        background-color: $mainBgColor;
-    }
-
     .foter__list{
         display: flex;
-        align-content: center;
+        flex-wrap: nowrap;
+        gap: 171px;
 
-        margin-right: 70px;
-        padding-top: 20px;
+        text-align: left;
+
+        & .foter__item{
+            flex-basis: content;
+        }
     }
     
     .foter__list--collocation{
-        flex-direction: column;
         gap: 9px;
+
+        & .foter__item--collocation{
+            margin-bottom: 0px;
+        }
     }
-
-    .foter__list--collocation-social{
-        gap: 10px;
-        margin: 0px;
-    }
-
-    // .foter__item{
-    //     position: relative;
-    //     top: 0px;
-    //     margin: 0px;
-    //     font-family: 'Roboto';
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     font-size: 14px;
-    //     line-height: 1.714;
-
-    //     letter-spacing: 0.03em;
-
-    //     color: $fourthColor;
-
-    //     margin-top: 9px;
-    // }
-
-    // .foter__head {
-    //     font-weight: 700;
-    //     font-size: 14px;
-    //     line-height: 1.143px;
-    //     letter-spacing: 0.03em;
-
-    //     color: $fourthColor;
-    // }
-
-    .foter__item--collocation{
-        position: relative;
-        left: 78px;
-        top: 0px;
-    }
-
 }
 
 

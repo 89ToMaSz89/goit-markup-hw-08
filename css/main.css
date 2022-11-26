@@ -899,6 +899,21 @@ h2 {
   color: #ffffff;
   padding-top: 60px;
 }
+.foter__list .foter__item .foter__list--collocation-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.foter__list .foter__item .foter__list--collocation-social .foter__item--collocation-social {
+  padding-top: 20px;
+}
 
 .foter__list--collocation {
   padding-top: 20px;
@@ -909,11 +924,6 @@ h2 {
 
 /* --------------------- FOR TABLET -----------------------*/
 @media screen and (min-width: 768px) {
-  .foter {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 60px 0px;
-  }
   .foter__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -928,44 +938,42 @@ h2 {
   .foter__list .foter__item .foter__head {
     padding: 0px;
   }
-  .foter__list--collocation {
-    display: block;
+  .foter__list .foter__list--collocation-social {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 10px;
   }
-}
-/* --------------------- FOR DESKTOP -----------------------*/
-@media screen and (min-width: 1200px) {
-  .foter {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 60px 0px;
-  }
-  .foter-overlay {
-    background-color: #2f303a;
-  }
-  .foter__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-right: 70px;
-    padding-top: 20px;
+  .foter__list .foter__list--collocation-social .foter__item--collocation-social {
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
   }
   .foter__list--collocation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+/* --------------------- FOR DESKTOP -----------------------*/
+@media screen and (min-width: 1200px) {
+  .foter__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 171px;
+    text-align: left;
+  }
+  .foter__list .foter__item {
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+  }
+  .foter__list--collocation {
     gap: 9px;
   }
-  .foter__list--collocation-social {
-    gap: 10px;
-    margin: 0px;
-  }
-  .foter__item--collocation {
-    position: relative;
-    left: 78px;
-    top: 0px;
+  .foter__list--collocation .foter__item--collocation {
+    margin-bottom: 0px;
   }
 }
 .foter__link {
