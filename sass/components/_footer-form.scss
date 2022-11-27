@@ -77,6 +77,7 @@
     /* --------------------- FOR DESKTOP -----------------------*/
 
 @media screen and (min-width: 1200px){
+
     .foter__form{
         padding-top: 12px;
         padding-left: 0px;
@@ -85,10 +86,12 @@
 
         & .foter__field-email{
             padding: 15px 157.6px 15px 16px;
+            position: absolute;
         }
 
         & .foter__btn{
-            flex-direction: row;
+            position: relative;
+            left: 230px;
         }
     }
 
