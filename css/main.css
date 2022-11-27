@@ -938,6 +938,12 @@ h2 {
   .foter__list .foter__item .foter__head {
     padding: 0px;
   }
+  .foter__list .foter__item .foter__list--collocation-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+  }
   .foter__list .foter__list--collocation-social .foter__item--collocation-social {
     -ms-flex-preferred-size: content;
         flex-basis: content;
@@ -1086,9 +1092,16 @@ h2 {
   .foter__form {
     padding-top: 12px;
     padding-left: 0px;
+    position: relative;
   }
   .foter__form .foter__field-email {
     padding: 15px 157.6px 15px 16px;
+  }
+  .foter__form .foter__btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .foter__form--collocation {
     display: -webkit-box;

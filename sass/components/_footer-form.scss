@@ -71,7 +71,7 @@
 @media screen and (min-width: 768px){
     .foter__form{
         padding-left: 151px;
-}
+    }
 }
     
     /* --------------------- FOR DESKTOP -----------------------*/
@@ -81,13 +81,19 @@
         padding-top: 12px;
         padding-left: 0px;
 
+        position: relative;
+
         & .foter__field-email{
             padding: 15px 157.6px 15px 16px;
+        }
+
+        & .foter__btn{
+            flex-direction: row;
         }
     }
 
     .foter__form--collocation{
         display: flex;
-       flex-direction: column;
+        flex-direction: column;
     }
 }
