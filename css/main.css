@@ -957,7 +957,7 @@ h2 {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    gap: 171px;
+    gap: 70px;
     text-align: left;
   }
   .foter__list .foter__item {
@@ -1013,6 +1013,7 @@ h2 {
   background-color: #2196f3;
 }
 
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 .foter__form {
   padding-top: 60px;
 }
@@ -1035,9 +1036,13 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  margin-top: 29px;
-  margin-left: 370px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-left: 140px;
   padding: 10px 13px 10px 42px;
   font-weight: 700;
   font-size: 16px;
@@ -1070,6 +1075,31 @@ h2 {
   fill: #ffffff;
 }
 
+/* --------------------- FOR TABLET -----------------------*/
+@media screen and (min-width: 768px) {
+  .foter__form {
+    padding-left: 151px;
+  }
+}
+/* --------------------- FOR DESKTOP -----------------------*/
+@media screen and (min-width: 1200px) {
+  .foter__form {
+    padding-top: 12px;
+    padding-left: 0px;
+  }
+  .foter__form .foter__field-email {
+    padding: 15px 157.6px 15px 16px;
+  }
+  .foter__form--collocation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /* ### Backdrop ### */
 .backdrop {
   position: fixed;
