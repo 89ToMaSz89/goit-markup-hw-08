@@ -765,17 +765,16 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
 }
-.menu__list .menu__item {
+.menu__list .menu__item .menu__btn {
   -ms-flex-preferred-size: calc((100% - 16px) / 3);
       flex-basis: calc((100% - 16px) / 3);
-}
-
-.menu__btn {
-  padding: 6px 22px;
   border-radius: 4px;
   border: none;
   font-size: 16px;
@@ -793,12 +792,32 @@ h2 {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu__btn:hover, .menu__btn:focus {
+.menu__list .menu__item .menu__btn:hover, .menu__list .menu__item .menu__btn:focus {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.menu__btn--padding-first {
+  padding: 6px 13px;
+}
+
+.menu__btn--padding-second {
+  padding: 6px 40px;
+}
+
+.menu__btn--padding-third {
+  padding: 6px 38px;
+}
+
+.menu__btn--padding-fourth {
+  padding: 6px 28px;
+}
+
+.menu__btn--padding-fifth {
+  padding: 6px 27px;
 }
 
 /* ------------------ FOR TABLET and DESKTOP --------------------*/
@@ -833,6 +852,7 @@ h2 {
   margin-top: 50px;
 }
 
+/* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 .project-card__item {
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
@@ -891,10 +911,10 @@ h2 {
 
 .project-card__description-box {
   position: absolute;
-  top: 0px;
+  top: 24px;
   margin: 0px;
   width: 100%;
-  padding: 49px 45px 49px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%); /* transformation */
@@ -911,6 +931,14 @@ h2 {
   color: #ffffff;
 }
 
+/* --------------------- FOR TABLET -----------------------*/
+/* --------------------- FOR DESKTOP --------------------- */
+@media screen and (min-width: 1200px) {
+  .project-card__description-box {
+    top: 0px;
+    padding: 49px 45px 49px 24px;
+  }
+}
 /* ### Footer ### */
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 .foter {

@@ -1,3 +1,5 @@
+/* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
+
 .project-card__item{
     border-bottom: 1px solid $borderCardColor;
     background-color: $fourthColor;
@@ -34,7 +36,7 @@
     }      
 }
 
- .project-card__name{
+.project-card__name{
     margin: 0px;
 
     padding-top: 20px;
@@ -63,10 +65,10 @@
 
 .project-card__description-box{
     position: absolute;
-    top: 0px;
+    top: 24px;
     margin: 0px;
     width: 100%;
-    padding: 49px 45px 49px 24px;
+    padding: 77px 24px; 
 
     background-color: rgba(33, 150, 243, 0.9);
 
@@ -87,8 +89,38 @@
 }
 
 
+/* --------------------- FOR TABLET -----------------------*/
 
 
+
+/* --------------------- FOR DESKTOP --------------------- */
+
+
+@media screen and (min-width: 1200px){
+
+    // .project-card__picture{          
+    //     margin: 0px;
+    //     padding: 0px;
+    
+    //     position: relative;
+    
+    //     overflow: hidden;
+    
+    //     &:hover{     /* transformation */
+    //         transform: translateY(0);
+    
+    //         & .project-card__description-box{
+    //             transform: translateY(0);
+    //         }
+    //     }      
+    // } 
+    
+    .project-card__description-box{
+        
+        top: 0px;
+        padding: 49px 45px 49px 24px;
+    }
+}
 
 
 

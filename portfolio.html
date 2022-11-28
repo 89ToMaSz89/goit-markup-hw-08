@@ -101,33 +101,59 @@
         <div class="container">
           <ul class="menu__list">
             <li class="menu__item">
-              <button class="menu__btn" type="button">Wszystkie</button>
+              <button class="menu__btn menu__btn--padding-first" type="button">
+                Wszystkie
+              </button>
             </li>
             <li class="menu__item">
-              <button class="menu__btn" type="button">Strony</button>
+              <button class="menu__btn menu__btn--padding-second" type="button">
+                Strony
+              </button>
             </li>
             <li class="menu__item">
-              <button class="menu__btn" type="button">Aplikacje</button>
+              <button class="menu__btn menu__btn--padding-third" type="button">
+                Aplikacje
+              </button>
             </li>
             <li class="menu__item">
-              <button class="menu__btn" type="button">Dizajn</button>
+              <button class="menu__btn menu__btn--padding-fourth" type="button">
+                Dizajn
+              </button>
             </li>
             <li class="menu__item">
-              <button class="menu__btn" type="button">Marketing</button>
+              <button class="menu__btn menu__btn--padding-fifth" type="button">
+                Marketing
+              </button>
             </li>
           </ul>
 
-    <!--PROJECTS-->
+          <!--PROJECTS-->
 
-    <!-- <ul class="project-card">
+          <ul class="project-card">
             <li class="project-card__item">
               <figure class="project-card__picture">
                 <img
-                  src="images/imgH.jpg"
-                  width="370"
-                  height="294"
+                  src="./images/imgHmobile.jpg"
                   alt="Technocrack"
+                  srcset="
+                    ./images/imgHmobile.jpg  450w,
+                    ./images/imgHtablet.jpg  354w,
+                    ./images/imgH.jpg       1200w
+                  "
+                  sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
+
+                <!-- <img
+                src="/images/imgD.jpg"
+                alt="John Doe. Product Designer"
+                srcset="
+                  /images/imgDmobile-450.jpg  450w,
+                  /images/imgDtablet.jpg      354w,
+                  /images/imgD.jpg           1200w
+                "
+                sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              /> -->
+
                 <div class="project-card__description-box">
                   <p class="project-card__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -140,7 +166,7 @@
               <figcaption class="project-card__name">Technocrack</figcaption>
               <p class="project-card__category">Strona internetowa</p>
             </li>
-            <li class="project-card__item">
+            <!--<li class="project-card__item">
               <figure class="project-card__picture">
                 <img
                   src="images/imgI.jpg"
@@ -309,11 +335,11 @@
                 Growing Business
               </figcaption>
               <p class="project-card__category">Aplikacja</p>
-            </li>
+            </li>-->
           </ul>
         </div>
-      </section>-->
-    </main> 
+      </section>
+    </main>
 
     <!-- ### FOOTER ### -->
 
