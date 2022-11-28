@@ -1,17 +1,18 @@
-.menu__list{              /* ### menu ### */
-    margin: 0px;
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 
-    box-sizing: border-box; 
+.menu__list{
+    box-sizing: border-box;
+
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
 
-    padding-left: 295px;
+    & .menu__item{
+        flex-basis: calc((100% - 16px) / 3);
+    }
 }
 
 .menu__btn{
-    margin: 0px;
-
     padding: 6px 22px;
 
     border-radius: 4px;
@@ -39,5 +40,27 @@
                 0px 2px 2px rgba(0, 0, 0, 0.12);
     
     cursor: pointer;
+    }
+
+}
+
+/* ------------------ FOR TABLET and DESKTOP --------------------*/
+
+@media screen and (min-width: 768px){
+
+    .menu__list{              /* ### menu ### */
+    
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        & .menu__item{
+            flex-basis: content;
+        }
+    }
+    
+    .menu__btn{
+        margin: 0px;
+    
+        padding: 6px 22px;
     }
 }

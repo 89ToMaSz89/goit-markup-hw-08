@@ -758,22 +758,23 @@ h2 {
   }
 }
 /* ### Menu ### */
-.menu__list { /* ### menu ### */
-  margin: 0px;
+/* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
+.menu__list {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  padding-left: 295px;
+}
+.menu__list .menu__item {
+  -ms-flex-preferred-size: calc((100% - 16px) / 3);
+      flex-basis: calc((100% - 16px) / 3);
 }
 
 .menu__btn {
-  margin: 0px;
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
@@ -800,6 +801,24 @@ h2 {
   cursor: pointer;
 }
 
+/* ------------------ FOR TABLET and DESKTOP --------------------*/
+@media screen and (min-width: 768px) {
+  .menu__list { /* ### menu ### */
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu__list .menu__item {
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+  }
+  .menu__btn {
+    margin: 0px;
+    padding: 6px 22px;
+  }
+}
 /* ### Projects ### */
 .project-card {
   margin: 0px;
