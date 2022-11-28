@@ -938,12 +938,6 @@ h2 {
   .foter__list .foter__item .foter__head {
     padding: 0px;
   }
-  .foter__list .foter__item .foter__list--collocation-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0px;
-  }
   .foter__list .foter__list--collocation-social .foter__item--collocation-social {
     -ms-flex-preferred-size: content;
         flex-basis: content;
@@ -1020,9 +1014,6 @@ h2 {
 }
 
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
-.foter__form {
-  padding-top: 60px;
-}
 .foter__form .foter__field-email {
   margin-top: 20px;
   padding: 15px 249.6px 15px 16px;
@@ -1097,10 +1088,12 @@ h2 {
   .foter__form .foter__field-email {
     padding: 15px 157.6px 15px 16px;
     position: absolute;
+    top: 20px;
   }
   .foter__form .foter__btn {
     position: relative;
     left: 230px;
+    top: 7px;
   }
   .foter__form--collocation {
     display: -webkit-box;

@@ -1,7 +1,6 @@
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 
 .foter__form{
-    padding-top: 60px;
 
     & .foter__field-email{
         margin-top: 20px;
@@ -87,11 +86,13 @@
         & .foter__field-email{
             padding: 15px 157.6px 15px 16px;
             position: absolute;
+            top: 20px;
         }
 
         & .foter__btn{
             position: relative;
             left: 230px;
+            top: 7px;
         }
     }
 
