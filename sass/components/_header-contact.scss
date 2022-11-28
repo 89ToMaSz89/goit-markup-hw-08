@@ -4,16 +4,78 @@
     display: none;
 }
 
+/* --------------------- FOR TABLET -----------------------*/
+
+@media screen and (min-width: 768px){
+
+    .header-contact{
+        display: flex;
+        flex-direction: column; //!!!
+        align-items: left;
+        gap: 10px;      //!!!
+
+        position: relative;
+        left: 101px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.02em;
+
+        color: $thirdColor;
+        text-decoration: none;
+
+        // & .header-contact__item{
+        //     align-items: flex-start;
+        //     justify-content: left;
+        // }
+
+    }
+
+    .header-contact__link{
+        color: $thirdColor;
+        text-decoration: none;
+
+        transition-property: color;     /* transition */
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            color: $mainColor;
+
+            & .header-contact__icon{
+                fill: $mainColor;
+            }
+        }   
+    }
+
+    .header-contact__icon{       /* svg */
+        margin-right: 10px;
+
+        width: 16px;
+        height: 12px;
+
+        fill: $thirdColor;
+
+        transition-property: fill;      /* transition */
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
 /* --------------------- FOR DESKTOP --------------------- */
 
 @media screen and (min-width: 1200px){
     .header-contact{           /* ### Header contact ### */
-        margin: 0px;
-        display: flex;
-        align-items: center;
+        // margin: 0px;
+        // display: flex;
+        flex-direction: row;
+        //align-items: center;
         gap: 30px;
 
-        position: relative;
+        //position: relative;
+        left: 345px;
 
         font-weight: 500;
         font-size: 14px;

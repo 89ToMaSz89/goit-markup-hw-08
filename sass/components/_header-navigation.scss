@@ -4,28 +4,24 @@
     display: none;
 }
 
-/* --------------------- FOR DESKTOP --------------------- */
+/* --------------------- FOR TABLET -----------------------*/
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 768px){
 
     .header-navigation{
         display: flex;
-    }
 
-    .header-navigation__list{           /* ### Menu navigation ### */
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 43px;
-        margin-left: 93px;
+        & .header-navigation__list{
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-left: 83px;
 
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
-        letter-spacing: 0.02em; 
-
-        margin-right: 364px;
+            font-weight: 500;
+            font-size: 14px;   
+            line-height: 1.143;
+            letter-spacing: 0.02em; 
+        }
     }
 
     .header-navigation__link{
@@ -58,6 +54,49 @@
             }
         }
     }
+}
+
+/* --------------------- FOR DESKTOP --------------------- */
+
+@media screen and (min-width: 1200px){
+
+    .header-navigation__list{           /* ### Menu navigation ### */
+        gap: 46px;
+        margin-left: 93px;
+
+        //margin-right: 345px;
+    }
+
+    // .header-navigation__link{
+    //     color: $secondaryColor;
+    //     text-decoration: none;
+    
+    //     transition-property: color;
+    //     transition-duration: 250ms;
+    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    //     &:hover,
+    //     &:focus,
+    //     &:active{
+    //         color: $mainColor;
+    //     }
+
+    //     &--underline{
+        
+    //         &::after{     /* PSEUDO CLASS ::AFTER */
+    //         margin: 0px;
+    //         margin-top: 36px;
+    
+    //         content: "";
+    //         background-color: $mainColor;
+    //         padding: 2px 26.5px;
+    //         border-radius: 2px;
+    
+    //         display: block;
+    //         position: absolute;
+    //         }
+    //     }
+    // }
 }
     
     
