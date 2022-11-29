@@ -853,6 +853,17 @@ h2 {
 }
 
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
 .project-card__item {
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
@@ -911,7 +922,7 @@ h2 {
 
 .project-card__description-box {
   position: absolute;
-  top: 24px;
+  top: 0px;
   margin: 0px;
   width: 100%;
   padding: 77px 24px;
@@ -932,6 +943,18 @@ h2 {
 }
 
 /* --------------------- FOR TABLET -----------------------*/
+@media screen and (min-width: 768px) {
+  .project-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .project-card__description-box {
+    top: 0px;
+    padding: 8px 24px;
+  }
+}
 /* --------------------- FOR DESKTOP --------------------- */
 @media screen and (min-width: 1200px) {
   .project-card__description-box {
