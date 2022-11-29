@@ -412,6 +412,10 @@ h2 {
   background-color: var(--bg-color);
   border-radius: 4px;
 }
+.our-strengths__list .our-strengths__item .our-strengths__icon .icon-position {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
 .our-strengths__list .our-strengths__item .our-strengths__header {
   font-size: 14px;
   line-height: 1.143;

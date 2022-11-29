@@ -16,6 +16,7 @@
     & .our-strengths__item{
 
         & .our-strengths__icon{   /* svg */
+
             width: 100%;
            // width: 450px;
             height: 120px;
@@ -26,10 +27,10 @@
             background-color: var(--bg-color);
             border-radius: 4px;
 
-            // & .icon-position{
-
-            //     //transform: translate(192.34px, 0px); //25px
-            // }
+            & .icon-position{
+                flex-basis: 50%;
+                //transform: translate(50%); //25px
+            }
         }
 
         & .our-strengths__header{
