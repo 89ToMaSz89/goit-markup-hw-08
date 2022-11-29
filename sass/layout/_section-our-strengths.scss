@@ -1,6 +1,6 @@
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 
-.our-strengths__list{           
+.our-strengths__list{      
     
     font-weight: 700;
     font-size: 14px;
@@ -16,19 +16,20 @@
     & .our-strengths__item{
 
         & .our-strengths__icon{   /* svg */
-
-            width: 450px;
+            width: 100%;
+           // width: 450px;
             height: 120px;
+            //padding: 25px 0px;
 
             margin-bottom: 30px;
     
             background-color: var(--bg-color);
             border-radius: 4px;
 
-            & .icon-position{
+            // & .icon-position{
 
-                transform: translate(192.34px, 25px);
-            }
+            //     //transform: translate(192.34px, 0px); //25px
+            // }
         }
 
         & .our-strengths__header{

@@ -1,12 +1,16 @@
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 
 .foter__form{
+    // display: flex;
+    // flex-direction: column;
+    // gap: 20px;
 
     padding-top: 60px;
 
     & .foter__field-email{
         margin-top: 20px;
-        padding: 15px 249.6px 15px 16px;
+        width: 100%;
+        padding: 15px 0px;
     
         font-weight: 400;
         font-size: 16px;
@@ -23,13 +27,15 @@
     }
 
     & .foter__btn{
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    
         margin-top: 20px;
-        margin-left: 140px;
+
+        // display: flex;
+        // align-items: center;
+        // align-content: center;
+        // justify-content: center;
+    
+        //margin-top: 20px;
+        //margin-left: 140px;
         padding: 10px 13px 10px 42px;
     
         font-weight: 700;
@@ -70,14 +76,23 @@
 /* --------------------- FOR TABLET -----------------------*/
 
 @media screen and (min-width: 768px){
-    .foter__form{
-        padding-left: 151px;
+    
+    .foter__item--collocation{
+        margin: 0 auto;
+    }
+
+    .foter__field-email{
+        padding: 15px 20px 15px 16px;
     }
 }
     
     /* --------------------- FOR DESKTOP -----------------------*/
 
 @media screen and (min-width: 1200px){
+
+    .foter__item--collocation{
+        margin: 0px;
+    }
 
     .foter__form{
         padding-top: 12px;
@@ -86,6 +101,7 @@
         position: relative;
 
         & .foter__field-email{
+            
             padding: 15px 157.6px 15px 16px;
             position: absolute;
             top: 20px;

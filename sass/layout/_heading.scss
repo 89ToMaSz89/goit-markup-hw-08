@@ -1,40 +1,40 @@
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 
-.heading{
-    margin: 0px;
-
-    box-sizing: border-box; 
-
-    padding: 118px 0px;
-
-    background-image: linear-gradient(
-
-                    0deg,
-                    rgba(47,48,58,0.4)0%,
-                    rgba(47,48,58,0.4)100%),
-                    url('../images/HeaderImgMobile.jpg');
-    background-repeat: no-repeat;
-    background-size: 480px auto;
-    background-position: center;
-}
-
-.heading-overlay{
-    background-color: $mainBgColor;
-}
-
-.heading__title{
-    margin: 0px;
-    padding-bottom: 30px;
-
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.615;
-
-    text-align: center;
-    letter-spacing: 0.06em; 
-
-    color: $fourthColor;
-}
+    .heading{
+        margin: 0px;
+    
+        box-sizing: border-box; 
+    
+        padding: 118px 0px;
+    
+        background-image: linear-gradient(
+    
+                        0deg,
+                        rgba(47,48,58,0.4)0%,
+                        rgba(47,48,58,0.4)100%),
+                        url('../images/HeaderImgMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: 480px auto;
+        background-position: center;
+    }
+    
+    .heading-overlay{
+        background-color: $mainBgColor;
+    }
+    
+    .heading__title{
+        margin: 0px;
+        padding-bottom: 30px;
+    
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+    
+        text-align: center;
+        letter-spacing: 0.06em; 
+    
+        color: $fourthColor;
+    }
 
 /* --------------------- FOR TABLET --------------------- */
 
