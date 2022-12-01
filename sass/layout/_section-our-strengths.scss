@@ -1,7 +1,13 @@
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 
 .our-strengths__list{      
-    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    //margin: 0 auto;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -16,11 +22,8 @@
     & .our-strengths__item{
 
         & .our-strengths__icon{   /* svg */
-
             width: 100%;
-           // width: 450px;
             height: 120px;
-            //padding: 25px 0px;
 
             margin-bottom: 30px;
     
@@ -28,8 +31,7 @@
             border-radius: 4px;
 
             & .icon-position{
-                flex-basis: 50%;
-                //transform: translate(50%); //25px
+                transform: translate(45%, 22%);
             }
         }
 
@@ -56,6 +58,7 @@
     .our-strengths__list{           
     
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         gap: 30px;

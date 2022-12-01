@@ -95,27 +95,22 @@
     }
 
     .foter__form{
+        display: flex;
+        justify-content: center;
+        
         padding-top: 12px;
-        padding-left: 0px;
-
         position: relative;
 
         & .foter__field-email{
-            
-            padding: 15px 157.6px 15px 16px;
+            padding-left: 15px;
             position: absolute;
             top: 20px;
         }
 
         & .foter__btn{
             position: relative;
-            left: 230px;
+            left: 202px;
             top: 7px;
         }
-    }
-
-    .foter__form--collocation{
-        display: flex;
-        flex-direction: column;
     }
 }
