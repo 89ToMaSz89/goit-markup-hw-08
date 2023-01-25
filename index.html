@@ -27,7 +27,7 @@
 
       <!--Menu mobile-->
 
-      <button class="menu-mobile" type="button">
+      <button class="menu-mobile" type="button" data-modalMenu-open>
         <svg class="menu-mobile__icon">
           <use
             href="./images/icons.svg#icon-menu_24px"
@@ -799,8 +799,11 @@
 
     <!--WINDOW MODAL - MENU_MOBILE-->
 
-    <div class="modal-menu"></div>
+    <div class="is-hidden" data-modalMenu>
+      <div class="modal-menu"></div>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/modalMenu.js"></script>
   </body>
 </html>
