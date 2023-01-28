@@ -27,7 +27,7 @@
 
       <!--Menu mobile-->
 
-      <button class="menu-mobile" type="button" data-modalMenu-open>
+      <button class="menu-mobile" type="button" data-modal-menu-open>
         <svg class="menu-mobile__icon">
           <use
             href="./images/icons.svg#icon-menu_24px"
@@ -799,11 +799,38 @@
 
     <!--WINDOW MODAL - MENU_MOBILE-->
 
-    <div class="is-hidden" data-modalMenu>
-      <div class="modal-menu"></div>
+    <div class="modal-menu is-hidden" data-modal-menu>
+      <button class="modal-menu__btn" type="button" data-modal-menu-close>
+        <svg class="modal-menu__icon">
+          <use
+            href="./images/icons.svg#icon-close_24px"
+            
+            x="0"
+            y="0"
+          ></use>
+        </svg>  
+      </button>
+
+      <ul class="modal-menu__list">
+        <li class="modal-menu__item">
+          <a href="" class="modal-menu__link">
+            Agencja
+          </a>
+        </li>
+        <li class="modal-menu__item">
+          <a href="" class="modal-menu__link">
+            Portfolio
+          </a>
+        <li class="modal-menu__item">
+          <a href="" class="modal-menu__link">
+            Kontakt
+          </a>
+        </li>
+        </li>
+      </ul>
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/modalMenu.js"></script>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>
