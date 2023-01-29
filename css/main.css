@@ -1601,6 +1601,7 @@ h2 {
   }
 }
 /* ### Window modal - menu mobile ### */
+/* ----------------- PRIMARY - FOR SMARTPHONE --------------- */
 .modal-menu {
   position: fixed;
   width: 100%;
@@ -1623,9 +1624,31 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 32px;
   padding-left: 40px;
   padding-top: 48px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+.modal-menu__list--position {
+  padding-top: 302px;
+}
+.modal-menu__list--social {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  padding-top: 64px;
+  padding-bottom: 48px;
 }
 .modal-menu__btn {
   position: absolute;
@@ -1633,7 +1656,7 @@ h2 {
   top: 11px;
   width: 40px;
   height: 40px;
-  border: 1px solid burlywood;
+  border: none;
   background-color: #ffffff;
 }
 .modal-menu__icon {
@@ -1641,6 +1664,39 @@ h2 {
   height: 18.67px;
 }
 
+.modal-menu__item--border {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .modal-menu__link {
   text-decoration: none;
+  color: #212121;
+}
+.modal-menu__link:hover, .modal-menu__link:focus {
+  color: #2196f3;
+}
+.modal-menu__link:hover.modal-menu__icon, .modal-menu__link:focus.modal-menu__icon {
+  fill: #2196f3;
+}
+.modal-menu__link--telephone {
+  font-size: 34px;
+  line-height: 1.176;
+  color: #757575;
+}
+.modal-menu__link--telephone:hover, .modal-menu__link--telephone:focus {
+  color: #2196f3;
+}
+.modal-menu__link--email {
+  font-size: 24px;
+  line-height: 1.166;
+  color: #757575;
+}
+.modal-menu__link--email:hover, .modal-menu__link--email:focus {
+  color: #2196f3;
+}
+.modal-menu__link--decoration {
+  font-size: 18px;
+  line-height: 1.222;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

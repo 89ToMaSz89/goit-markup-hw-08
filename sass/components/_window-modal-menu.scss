@@ -1,4 +1,7 @@
+/* ----------------- PRIMARY - FOR SMARTPHONE --------------- */
+
 .modal-menu{
+
     position: fixed;
 
     width: 100%;
@@ -15,10 +18,30 @@
     &__list{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 32px;
 
         padding-left: 40px;
         padding-top: 48px;
+
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+
+        &--position{
+            padding-top: 302px;
+            
+        }
+
+        &--social{
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10px;
+            
+            padding-top: 64px;
+            padding-bottom: 48px;
+        }
     }
 
     &__btn{
@@ -29,7 +52,7 @@
         width: 40px;
         height: 40px;
 
-        border: 1px solid burlywood;
+        border: none;
         background-color: $fourthColor;
     }
 
@@ -39,7 +62,53 @@
     }
 }
 
+.modal-menu__item{
+    
+    &--border{
+        padding-left: 10px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);;
+    }
+}
+
 .modal-menu__link{
 
     text-decoration: none;
+    color: $secondaryColor;
+
+    &:hover,
+    &:focus{
+        color: $mainColor;
+
+        &.modal-menu__icon{
+            fill: $mainColor;
+        }
+    }
+
+    &--telephone{
+        font-size: 34px;
+        line-height: 1.176;
+        color: $thirdColor;
+
+        &:hover,
+        &:focus{
+            color: $mainColor;
+        }
+    }
+
+    &--email{
+        font-size: 24px;
+        line-height: 1.166;
+        color: $thirdColor;
+
+        &:hover,
+        &:focus{
+            color: $mainColor;
+        }
+    }
+
+    &--decoration{
+        font-size: 18px;
+        line-height: 1.222;
+        color: $mainColor;
+    }
 }
