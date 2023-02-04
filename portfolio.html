@@ -27,7 +27,7 @@
 
       <!--Menu mobile-->
 
-      <a href="" class="menu-mobile">
+      <button class="menu-mobile" type="button" data-modal-menu-open>
         <svg class="menu-mobile__icon">
           <use
             href="./images/icons.svg#icon-menu_24px"
@@ -37,7 +37,7 @@
             y="0"
           ></use>
         </svg>
-      </a>
+      </button>
 
       <!--Menu navigation-->
 
@@ -470,109 +470,77 @@
       </div>
     </footer>
 
-    <!-- <footer class="foter foter-overlay">
-      <div class="container">
-        <ul class="foter__list">
-          <li class="foter__item">
-            <a href="./index.html" class="foter__logo">
-              <span class="foter__logo foter__logo--color">Web</span>Studio
-            </a>
-            <address class="foter__contact">
-              <ul class="foter__list foter__list--collocation">
-                <li class="foter__item">m. Warszawa, Aleje Jerozolimskie 21</li>
-                <li class="foter__item">
-                  <a class="foter__link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li class="foter__item">
-                  <a class="foter__link" href=""> +48 111 111 111 </a>
-                </li>
-              </ul>
-            </address>
-          </li>
-          <li class="foter__item">
-            <p class="foter__head">DOŁĄCZ DO NAS</p>
-            <ul class="foter__list foter__list--collocation-social">
-              <li class="foter__item">
-                <a class="foter__link" href="https://www.instagram.com/">
-                  <svg class="foter__icons" width="44px" height="44px">
-                    <use
-                      href="./images/icons.svg#icon-instagram"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="foter__item">
-                <a class="foter__link" href="https://twitter.com/">
-                  <svg class="foter__icons" width="44px" height="44px">
-                    <use
-                      href="./images/icons.svg#icon-twitter"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="foter__item">
-                <a class="foter__link" href="https://www.facebook.com/">
-                  <svg class="foter__icons" width="44px" height="44px">
-                    <use
-                      href="./images/icons.svg#icon-facebook"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="foter__item">
-                <a class="foter__link" href="https://pl.linkedin.com/">
-                  <svg class="foter__icons" width="44px" height="44px">
-                    <use
-                      href="./images/icons.svg#icon-linkedin2"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
+    <!--WINDOW MODAL - MENU_MOBILE-->
 
-          <!-- FORM -->
+    <div class="modal-menu is-hidden" data-modal-menu>
+      <button class="modal-menu__btn" type="button" data-modal-menu-close>
+        <a href="" class="modal-menu__link">
+          <svg class="modal-menu__icon">
+            <use
+              href="./images/icons.svg#icon-close_24px"
+              x="0"
+              y="0"
+            ></use>
+          </svg>  
+        </a>
+      </button>
 
-    <!--<li class="foter__item foter__item--collocation">
-            <form class="foter__form">
-              <label for="email-newsletter" class="foter__head"
-                >ZAPISZ SIĘ DO NEWSLETTERA</label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email-newsletter"
-                placeholder="E-mail"
-                class="foter__field-email"
-              />
-              <button type="submit" class="foter__btn">
-                Zapisz się
-                <svg class="foter__form-icon">
-                  <use href="images/icons.svg#icon-icon-send" x="0" y="0"></use>
-                </svg>
-              </button>
-            </form>
-          </li>
-        </ul>
-      </div>
-    </footer> -->
+      <ul class="modal-menu__list">
+        <li class="modal-menu__item">
+          <a href="./index.html" class="modal-menu__link">
+            Agencja
+          </a>
+        </li>
+        <li class="modal-menu__item">
+          <a href="./portfolio.html" class="modal-menu__link">
+            Portfolio
+          </a>
+        <li class="modal-menu__item">
+          <a href="" class="modal-menu__link">
+            Kontakt
+          </a>
+        </li>
+        </li>
+      </ul>
+
+      <ul class="modal-menu__list modal-menu__list--position">
+        <li class="modal-menu__item">
+          <a href="" class="modal-menu__link modal-menu__link--telephone">
+            + 48 111 111 111
+          </a>
+        </li>
+        <li class="modal-menu__item">
+          <a href="" class="modal-menu__link modal-menu__link--email">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="modal-menu__list modal-menu__list--social">
+        <li class="modal-menu__item modal-menu__item--border">
+          <a href="" class="modal-menu__link modal-menu__link--decoration">
+            Instagram
+          </a>
+        </li>
+        <li class="modal-menu__item modal-menu__item--border">
+          <a href="" class="modal-menu__link modal-menu__link--decoration">
+            Twitter
+          </a>
+        </li>
+        <li class="modal-menu__item modal-menu__item--border">
+          <a href="" class="modal-menu__link modal-menu__link--decoration">
+            Facebook
+          </a>
+        </li>
+        <li class="modal-menu__item modal-menu__item--border">
+          <a href="https://pl.linkedin.com/" class="modal-menu__link modal-menu__link--decoration">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/modal-menu.js"></script>
+
   </body>
 </html>

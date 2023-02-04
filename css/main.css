@@ -156,7 +156,6 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     gap: 60px;
-    margin-left: 83px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -213,7 +212,6 @@ h2 {
             align-items: left;
     gap: 10px;
     position: relative;
-    left: 101px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.166;
@@ -258,7 +256,6 @@ h2 {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 30px;
-    left: 345px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -1382,7 +1379,7 @@ h2 {
 }
 .modal .modal-form__field { /* field of form */
   margin: 0 auto;
-  padding: 14px 232px 14px 0px;
+  padding: 14px 192px 14px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   -webkit-transition-property: border-color;
@@ -1665,6 +1662,9 @@ h2 {
 }
 
 .modal-menu__item--border {
+  font-size: 18px;
+}
+.modal-menu__item--border:not(:first-child) {
   padding-left: 10px;
   border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
