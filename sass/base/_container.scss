@@ -2,11 +2,13 @@
 
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 
+@media screen and (min-width: 320px){
   .container{
     max-width: 450px;
     
     margin: 0 auto;
   }
+}
 
 /* --------------------- FOR TABLET --------------------- */
 
