@@ -30,7 +30,6 @@
         flex-direction: row;
         justify-content: center;
         gap: 10px;
-        //margin: 0px 122px 24px 122px;
         margin: 0 auto;
     }
 
@@ -98,7 +97,7 @@
 
             display: flex;
             gap: 10px;
-            margin: 0px 74px 24px 74px;
+            padding: 0px 74px 24px 74px;
         }
     }
 }
@@ -119,7 +118,7 @@
 
         &--position{      /* svg */
             gap: 10px;
-            margin: 0px 32px 30px 32px;
+            padding: 0px 32px 30px 32px;
         }
 }
 }

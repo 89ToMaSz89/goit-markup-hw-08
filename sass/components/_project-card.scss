@@ -104,11 +104,12 @@
 
     .project-card{
         flex-direction: row;
+        flex-basis: calc((100% -30px) / 2);
     }
 
     .project-card__description-box{
         top: 0px;
-        padding: 49px 24px;
+        padding: 62px 24px;
     }
 }
 
@@ -117,22 +118,9 @@
 
 @media screen and (min-width: 1200px){
 
-    // .project-card__picture{          
-    //     margin: 0px;
-    //     padding: 0px;
-    
-    //     position: relative;
-    
-    //     overflow: hidden;
-    
-    //     &:hover{     /* transformation */
-    //         transform: translateY(0);
-    
-    //         & .project-card__description-box{
-    //             transform: translateY(0);
-    //         }
-    //     }      
-    // } 
+    .project-card{
+        flex-basis: calc((100% - 60px) / 3);
+    }
     
     .project-card__description-box{
         
