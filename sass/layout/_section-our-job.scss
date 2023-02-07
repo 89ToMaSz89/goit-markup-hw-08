@@ -2,8 +2,11 @@
 
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 
-.our-job{
-    display: none;
+@media screen and (min-width: 320px){
+
+    .our-job{
+        display: none;
+    }
 }
 
 /* --------------------- FOR TABLET -----------------------*/

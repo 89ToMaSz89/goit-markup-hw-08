@@ -1,5 +1,4 @@
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
-@media screen and (min-width: 320px){
 
 .project-card{
     display: flex;
@@ -95,8 +94,6 @@
         color: $fourthColor;
     }
 }
-}
-
 
 /* --------------------- FOR TABLET -----------------------*/
 
@@ -104,7 +101,7 @@
 
     .project-card{
         flex-direction: row;
-        flex-basis: calc((100% -30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     }
 
     .project-card__description-box{
@@ -114,7 +111,6 @@
 }
 
 /* --------------------- FOR DESKTOP --------------------- */
-
 
 @media screen and (min-width: 1200px){
 

@@ -1,7 +1,5 @@
 /* ----------------- PRIMARY - FOR SMARTPHONE ----------------- */
 
-@media screen and (min-width: 320px){
-
     .heading{
         margin: 0px;
     
@@ -48,11 +46,10 @@
     
         color: $fourthColor;
     }
-}
 
 /* --------------------- FOR TABLET --------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px){
     .heading{
         margin: 0px;
 

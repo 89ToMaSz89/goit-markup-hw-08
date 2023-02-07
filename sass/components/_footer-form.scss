@@ -1,10 +1,7 @@
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 
 .foter__form{
-    // display: flex;
-    // flex-direction: column;
-    // gap: 20px;
-
+    
     padding-top: 60px;
 
     & .foter__field-email{
@@ -29,15 +26,6 @@
     & .foter__btn{
         margin-top: 20px;
 
-        //display: flex;
-        //gap: 24px;
-        //align-items: center;
-        // align-items: center;
-        // align-content: center;
-        //justify-content: center;
-    
-        //margin-top: 20px;
-        //margin-left: 140px;
         padding: 10px 13px 10px 42px;
     
         font-weight: 700;
@@ -70,10 +58,11 @@
     width: 24px;
     height: 24px;
 
-    margin-left: 24px;
+    // margin-left: 24px;
 
     fill: $fourthColor;
 }
+
 
 /* --------------------- FOR TABLET -----------------------*/
 
