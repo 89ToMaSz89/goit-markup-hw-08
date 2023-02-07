@@ -19,6 +19,10 @@
 
     & .our-strengths__item{
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         & .our-strengths__icon{   /* svg */
 
             width: 100%;
@@ -30,7 +34,7 @@
             border-radius: 4px;
 
             & .icon-position{
-                transform: translate(44%, 25%);
+                transform: translate(50%,25%);
             }
         }
 
@@ -66,13 +70,19 @@
 
             flex-basis: calc((100% - 30px) / 2);
 
-            // & .our-strengths__icon{   /* svg */
+            & .our-strengths__icon{   /* svg */
 
-            //     & .icon-position{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
 
-            //         transform: translate(144.34px, 25px);
-            //     }
-            // }
+                & .icon-position{
+
+                    // transform: translate(40%,25%);
+                    display: flex;
+                    justify-content: center;
+                }
+            }
 
             & .our-strengths__header{
 
@@ -97,18 +107,24 @@
             padding-top: 94px;
         }
 
-        // & .our-strengths__item{
+        & .our-strengths__item{
 
-        //     // & .our-strengths__icon{   /* svg */
+            & .our-strengths__icon{   /* svg */
 
-        //     //     //width: 270px;
+                //width: 270px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
 
-        //     //     // & .icon-position{
+                & .icon-position{
 
-        //     //     //     transform: translate(102.34px, 25px);
-        //     //     // }
-        //     // }
-        // }
+                    //transform: translate(40%,25%);
+                   // display: flex;
+                    justify-content: center;
+                    
+                }
+            }
+        }
     }
 }
 /* ********* END SECTION NO.1 - OUR STRENGTHS ************ */

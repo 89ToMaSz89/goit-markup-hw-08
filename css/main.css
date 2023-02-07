@@ -448,6 +448,18 @@ h2 {
 .our-strengths__list--distance {
   padding-top: 60px;
 }
+.our-strengths__list .our-strengths__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .our-strengths__list .our-strengths__item .our-strengths__icon { /* svg */
   width: 100%;
   margin: 0 auto;
@@ -456,8 +468,8 @@ h2 {
   border-radius: 4px;
 }
 .our-strengths__list .our-strengths__item .our-strengths__icon .icon-position {
-  -webkit-transform: translate(44%, 25%);
-          transform: translate(44%, 25%);
+  -webkit-transform: translate(50%, 25%);
+          transform: translate(50%, 25%);
 }
 .our-strengths__list .our-strengths__item .our-strengths__header {
   font-size: 14px;
@@ -492,6 +504,15 @@ h2 {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
+  .our-strengths__list .our-strengths__item .our-strengths__icon { /* svg */ }
+  .our-strengths__list .our-strengths__item .our-strengths__icon .icon-position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .our-strengths__list .our-strengths__item .our-strengths__header {
     text-align: left;
   }
@@ -512,6 +533,12 @@ h2 {
   }
   .our-strengths__list--distance {
     padding-top: 94px;
+  }
+  .our-strengths__list .our-strengths__item .our-strengths__icon { /* svg */ }
+  .our-strengths__list .our-strengths__item .our-strengths__icon .icon-position {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /* ********* END SECTION NO.1 - OUR STRENGTHS ************ */
@@ -1624,8 +1651,8 @@ h2 {
 /* ----------------- PRIMARY - FOR SMARTPHONE --------------- */
 .modal-menu {
   position: fixed;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   top: 0px;
   left: 0px;
   background-color: #ffffff;
