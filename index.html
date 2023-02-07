@@ -231,16 +231,20 @@
             <!-- FIRST CARD -->
 
             <li class="our-team__item">
-              <img
-                src="./images/imgD.jpg"
-                alt="John Doe. Product Designer"
-                srcset="
-                  ./images/imgDmobile-450.jpg  450w,
-                  ./images/imgDtablet.jpg      354w,
-                  ./images/imgD.jpg           1200w
-                "
-                sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <source srcset="./images/imgD.jpg,
+                                ./images/imgD@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                <source srcset="./images/imgDtablet.jpg,
+                                ./images/imgDtablet@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                <source srcset="./images/imgDmobile-450.jpg,
+                                ./images/imgDmobile-450@2x.jpg 2x"
+                        media="(min-width: 480px)">
+                <img src="./images/imgD.jpg"
+                      alt="John Doe. Product Designer">
+              </picture>
+              
               <p class="our-team__name">John Doe</p>
               <p class="our-team__workplace">Product Designer</p>
 
@@ -303,16 +307,20 @@
             <!--SECOND CARD-->
 
             <li class="our-team__item">
-              <img
-                src=".images/imgE.jpg"
-                alt="John Doe. Frontend Developer"
-                srcset="
-                  ./images/imgEmobile.jpg  450w,
-                  ./images/imgEtablet.jpg  354w,
-                  ./images/imgE.jpg       1200w
-                "
-                sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <source srcset="./images/imgE.jpg,
+                                ./images/imgE@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                <source srcset="./images/imgEtablet.jpg,
+                                ./images/imgEtablet@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                <source srcset="./images/imgEmobile.jpg,
+                                ./images/imgEmobile@2x.jpg 2x"
+                        media="(min-width: 480px)">
+                <img src="./images/imgE.jpg"
+                      alt="John Doe. Frontend Developer">
+              </picture>
+              
               <p class="our-team__name">John Doe</p>
               <p class="our-team__workplace">Frontend Developer</p>
 
@@ -375,16 +383,20 @@
             <!--THIRD CARD-->
 
             <li class="our-team__item">
-              <img
-                src="./images/imgC.jpg"
-                alt="John Doe. Marketing"
-                srcset="
-                  ./images/imgFmobile.jpg  450w,
-                  ./images/imgFtablet.jpg  354w,
-                  ./images/imgF.jpg       1200w
-                "
-                sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <source srcset="./images/imgF.jpg,
+                                ./images/imgF@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                <source srcset="./images/imgFtablet.jpg,
+                                ./images/imgFtablet@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                <source srcset="./images/imgFmobile.jpg,
+                                ./images/imgFmobile@2x.jpg 2x"
+                        media="(min-width: 480px)">
+                <img src="./images/imgF.jpg"
+                      alt="Joh Doe. Marketing">
+              </picture>
+            
               <p class="our-team__name">John Doe</p>
               <p class="our-team__workplace">Marketing</p>
 
@@ -447,16 +459,20 @@
             <!--FOURTH CARD-->
 
             <li class="our-team__item">
-              <img
-                src="./images/imgG.jpg"
-                alt="John Doe. UI Designer"
-                srcset="
-                  ./images/imgGmobile.jpg  450w,
-                  ./images/imgGtablet.jpg  354w,
-                  ./images/imgG.jpg       1200w
-                "
-                sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-              />
+              <picture>
+                <source srcset="./images/imgG.jpg,
+                                ./images/imgG@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                <source srcset="./images/imgGtablet.jpg,
+                                ./images/imgGtablet@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                <source srcset="./images/imgGmobile.jpg,
+                                ./images/imgGmobile@2x.jpg 2x"
+                        media="(min-width:480px)">
+                <img src="./images/imgG.jpg"
+                      alt="John Doe. UI Designer">
+              </picture>
+              
               <p class="our-team__name">John Doe</p>
               <p class="our-team__workplace">UI Designer</p>
 
