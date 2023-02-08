@@ -1197,12 +1197,12 @@ h2 {
 
 /* -----------------PRIMARY - FOR SMARTPHONE -------------------*/
 .foter__form {
-  padding-top: 60px;
+  margin-top: 60px;
 }
 .foter__form .foter__field-email {
-  margin-top: 20px;
   width: 100%;
   padding: 15px 0px;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -1213,8 +1213,8 @@ h2 {
   border-radius: 4px;
 }
 .foter__form .foter__btn {
-  margin-top: 20px;
   padding: 10px 13px 10px 42px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -1242,6 +1242,7 @@ h2 {
 .foter__form-icon {
   width: 24px;
   height: 24px;
+  margin-left: 24px;
   fill: #ffffff;
 }
 
@@ -1266,6 +1267,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 0px;
     padding-top: 12px;
     position: relative;
   }
