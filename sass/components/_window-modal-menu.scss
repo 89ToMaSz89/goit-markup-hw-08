@@ -10,7 +10,7 @@
     // left: 0px;
 
     background-color: $fourthColor;
-
+   
     transform: translateY(0);       /* transformation */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,6 +63,8 @@
 }
 
 .modal-menu__item{
+
+    border: 1px solid orange;
     
     &--border{
         font-size: 18px;
